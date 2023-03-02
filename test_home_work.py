@@ -44,7 +44,7 @@ def test_random_list():
     from random import randint
 
     l = [randint(1, 100) for i in range(10)]
-
+    l = sorted(l)
     assert len(l) == 10
     assert l[0] < l[-1]
 
